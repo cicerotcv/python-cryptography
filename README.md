@@ -8,7 +8,6 @@
 # file
 positional arguments:
 filepath    Path of file to be encrypted
-output      Output directory to store the encrypted file
 
 optional arguments:
 --store-key
@@ -23,8 +22,6 @@ positional arguments:
 text        Text to be encrypted
 
 optional arguments:
---store-key
-            Whether the program should store the generated key or not
 -p PASSWORD, --password PASSWORD
             Password used to decrypt
 ```
