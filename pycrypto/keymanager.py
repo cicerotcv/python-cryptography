@@ -1,5 +1,4 @@
 import base64
-from os import urandom
 from typing import Union
 
 from cryptography.fernet import Fernet
@@ -17,7 +16,7 @@ class KeyManager:
 
         password = password.encode()
 
-        salt = password + urandom(16)
+        salt = password
         kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),
                          length=32,
                          salt=salt,
